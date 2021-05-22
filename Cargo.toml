@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 log = "0.4.14"
+native-tls = "0.2.7"
 simple_logger = "1.11.0"
 tokio = { version = "1.6.0", features = ["full"] }
-tokio-tungstenite = "0.14.0"
+tokio-tungstenite = { version = "0.14.0", features = ["native-tls"] }
